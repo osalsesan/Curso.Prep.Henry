@@ -143,9 +143,9 @@ function multiplicarArgumentos() {
   if(arguments.length === 0) return 0
   var multiplica = 1
   for(var i = 0; i < arguments.length; i++){
-    multiplica = multiplica * arguments[i]  
+    multiplica = multiplica * arguments[i]; 
   }
-    return multiplica
+    return multiplica;
 }
 
 
@@ -155,10 +155,10 @@ function cuentoElementos(arreglo){
   var contador = 0
   for(var i = 0; i < arreglo.length; i++){
     if(arreglo[i] > 18){
-      contador++
+      contador++;
     }
   }
-  return contador
+  return contador;
 }
 
 
@@ -170,7 +170,7 @@ function diaDeLaSemana(numeroDeDia) {
 
   if(numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
-  } return "Es dia Laboral"
+  } return "Es dia Laboral";
   
 } 
 
@@ -184,7 +184,7 @@ function empiezaConNueve(n) {
   
   if(empiezonueve.charAt(0) === "9"){
     return true;
-  } return false
+  } return false;
 
 }
 
@@ -196,9 +196,9 @@ function todosIguales(arreglo) {
   
   for(var i= 0; i < arreglo.length - 1; i++ ){
     if(arreglo[i] === arreglo[i+1] ){
-      return true
+      return true;
     }
-  }   return false
+  }   return false;
 
 } 
 
@@ -208,24 +208,32 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var nuevoArray = []
-  for(var i = 0; 1 < array.length; i++){
+  
+  var nuevoArray = [];
+  for(var i = 0; i < array.length; i++){
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-    nuevoArray.push(array[i]);
+      nuevoArray.push(array[i]);
     }
   }
-    if(nuevoArray.length < 3){
-      return "No se encontraron los meses pedidos"
-    } else 
-      return nuevoArray
+  if (nuevoArray.length < 3){
+    return "No se encontraron los meses pedidos";
+  } else 
+    return nuevoArray;
 }
-
-
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  
+  var nuevoarray = [];
+  for(var i = 0; i < array.length; i++){
+    if(array[i] > 100){
+      nuevoarray.push(array[i]);
+    }
+  }  
+  return nuevoarray;
 }
+
 
 
 function breakStatement(numero) {
